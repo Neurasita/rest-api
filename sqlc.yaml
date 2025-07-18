@@ -1,0 +1,11 @@
+version: "2"
+sql:
+  - engine: postgresql
+    queries:
+      - misc/database/queries/user_queries.sql
+    schema: misc/database/migrations
+    gen:
+      go:
+        package: repo
+        out: internal/repo
+        sql_package: pgx/v5
