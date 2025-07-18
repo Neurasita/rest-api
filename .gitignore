@@ -1,0 +1,10 @@
+.env
+dist/
+
+*.log
+
+
+# Editor
+.zed/
+.vscode/
+.idea/
