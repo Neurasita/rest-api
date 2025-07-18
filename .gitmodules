@@ -1,0 +1,3 @@
+[submodule "misc/database"]
+	path = misc/database
+	url = https://github.com/Neurasita/database
