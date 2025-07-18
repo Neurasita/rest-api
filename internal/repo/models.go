@@ -53,8 +53,26 @@ func (ns NullGender) Value() (driver.Value, error) {
 	return string(ns.Gender), nil
 }
 
+type ImageClassification struct {
+	ID         pgtype.UUID
+	PlantID    pgtype.UUID
+	DiseaseID  pgtype.UUID
+	Hash       string
+	Categories string
+}
+
 type Permission struct {
 	ID string
+}
+
+type Pest struct {
+	ID              pgtype.UUID
+	ScitentificName string
+}
+
+type Plant struct {
+	ID              pgtype.UUID
+	ScitentificName string
 }
 
 type Profile struct {
